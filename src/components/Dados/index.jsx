@@ -173,7 +173,7 @@ const index = ({ handleInputChange, handleInputChangeFile }) => {
             name='banco'
             className='bg-gray-200 text-black text-sm rounded-lg p-3 h-12 w-full'
             placeholder='Banco'
-            required
+            // required
             onChange={handleInputChange} // Handle input changes
           />
         </div>
@@ -192,7 +192,7 @@ const index = ({ handleInputChange, handleInputChangeFile }) => {
             name='agencia'
             className='bg-gray-200 text-black text-sm rounded-lg p-3 h-12 w-full'
             placeholder='Agência'
-            required
+            // required
             onChange={handleInputChange} // Handle input changes
           />
         </div>
@@ -210,7 +210,7 @@ const index = ({ handleInputChange, handleInputChangeFile }) => {
             name='conta'
             className='bg-gray-200 text-black text-sm rounded-lg p-3 h-12 w-full'
             placeholder='Conta'
-            required
+            // required
             onChange={handleInputChange} // Handle input changes
           />
         </div>
@@ -229,7 +229,7 @@ const index = ({ handleInputChange, handleInputChangeFile }) => {
             name='pix'
             className='bg-gray-200 text-black text-sm rounded-lg p-3 h-12 w-full'
             placeholder='Chave Pix'
-            required
+            // required
             onChange={handleInputChange} // Handle input changes
           />
         </div>
@@ -247,7 +247,7 @@ const index = ({ handleInputChange, handleInputChangeFile }) => {
             id='cnh'
             name='cnh'
             className='bg-gray-200 text-black text-sm rounded-lg p-3 h-12 w-full'
-            required
+            // required
             onChange={handleInputChangeFile}
           />
         </div>
@@ -265,7 +265,7 @@ const index = ({ handleInputChange, handleInputChangeFile }) => {
             id='antt'
             name='antt'
             className='bg-gray-200 text-black text-sm rounded-lg p-3 h-12 w-full'
-            required
+            // required
             onChange={handleInputChangeFile}
           />
         </div>
@@ -282,7 +282,7 @@ const index = ({ handleInputChange, handleInputChangeFile }) => {
             id='crlv'
             name='crlv'
             className='bg-gray-200 text-black text-sm rounded-lg p-3 h-12 w-full'
-            required
+            // required
             onChange={handleInputChangeFile}
           />
         </div>
@@ -301,7 +301,7 @@ const index = ({ handleInputChange, handleInputChangeFile }) => {
             name='endereco' // Add name attribute
             className='bg-gray-200 text-black text-sm rounded-lg p-3 h-12 w-full'
             placeholder='Rua X, Número Y, Bairro Z, Cidade W'
-            required
+            // required
             onChange={handleInputChangeFile} // Handle input changes
           />
         </div>

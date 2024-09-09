@@ -4,6 +4,8 @@ const BASE_URL = '/driver';
 
 export const getAllDrivers = async () => api.get(`${BASE_URL}`);
 
+export const getAllUniqueDrivers = async () => api.get(`${BASE_URL}/unique`);
+
 export const getAllDriversWithRoute = async () => {
   return await api.get(`${BASE_URL}s/routes`);
 };

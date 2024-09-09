@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Graphy1 from './Graph1';
 import Graphy2 from './Graph2';
 import Graphy3 from './Graph3';
-import { getAllDrivers } from '@/service/driver';
+import { getAllUniqueDrivers } from '@/service/driver';
 import { getAllRoutes } from '@/service/route';
 const index = () => {
   const [selectedOption, setSelectedOption] = useState('Rotas');
@@ -15,8 +15,8 @@ const index = () => {
   };
 
   useEffect(() => {
-    getAllDrivers().then((response) => {
-      setNumeroMotoristas(response.data.response.length);
+    getAllUniqueDrivers().then((response) => {
+      setNumeroMotoristas(response.data.response[0].total);
       console.log(response.data.response);
     });
     getAllRoutes().then((response) => {

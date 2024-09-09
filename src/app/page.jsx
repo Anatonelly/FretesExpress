@@ -115,53 +115,53 @@ function HomeContent() {
           : null
         : setMissing((prev) => prev.filter((item) => item !== 'Caminhão'));
 
-      !formData.banco
-        ? !missing.includes('Banco')
-          ? setMissing((prev) => [...prev, 'Banco'])
-          : null
-        : setMissing((prev) => prev.filter((item) => item !== 'Banco'));
+      // !formData.banco
+      //   ? !missing.includes('Banco')
+      //     ? setMissing((prev) => [...prev, 'Banco'])
+      //     : null
+      //   : setMissing((prev) => prev.filter((item) => item !== 'Banco'));
 
-      !formData.agencia
-        ? !missing.includes('Agência')
-          ? setMissing((prev) => [...prev, 'Agência'])
-          : null
-        : setMissing((prev) => prev.filter((item) => item !== 'Agência'));
+      // !formData.agencia
+      //   ? !missing.includes('Agência')
+      //     ? setMissing((prev) => [...prev, 'Agência'])
+      //     : null
+      //   : setMissing((prev) => prev.filter((item) => item !== 'Agência'));
 
-      !formData.conta
-        ? !missing.includes('Conta')
-          ? setMissing((prev) => [...prev, 'Conta'])
-          : null
-        : setMissing((prev) => prev.filter((item) => item !== 'Conta'));
+      // !formData.conta
+      //   ? !missing.includes('Conta')
+      //     ? setMissing((prev) => [...prev, 'Conta'])
+      //     : null
+      //   : setMissing((prev) => prev.filter((item) => item !== 'Conta'));
 
-      !formData.pix
-        ? !missing.includes('Pix')
-          ? setMissing((prev) => [...prev, 'Pix'])
-          : null
-        : setMissing((prev) => prev.filter((item) => item !== 'Pix'));
+      // !formData.pix
+      //   ? !missing.includes('Pix')
+      //     ? setMissing((prev) => [...prev, 'Pix'])
+      //     : null
+      //   : setMissing((prev) => prev.filter((item) => item !== 'Pix'));
 
-      !formData.cnh
-        ? !missing.includes('CNH')
-          ? setMissing((prev) => [...prev, 'CNH'])
-          : null
-        : setMissing((prev) => prev.filter((item) => item !== 'CNH'));
+      // !formData.cnh
+      //   ? !missing.includes('CNH')
+      //     ? setMissing((prev) => [...prev, 'CNH'])
+      //     : null
+      //   : setMissing((prev) => prev.filter((item) => item !== 'CNH'));
 
-      !formData.antt
-        ? !missing.includes('ANTT')
-          ? setMissing((prev) => [...prev, 'ANTT'])
-          : null
-        : setMissing((prev) => prev.filter((item) => item !== 'ANTT'));
+      // !formData.antt
+      //   ? !missing.includes('ANTT')
+      //     ? setMissing((prev) => [...prev, 'ANTT'])
+      //     : null
+      //   : setMissing((prev) => prev.filter((item) => item !== 'ANTT'));
 
-      !formData.crlv
-        ? !missing.includes('CRLV')
-          ? setMissing((prev) => [...prev, 'CRLV'])
-          : null
-        : setMissing((prev) => prev.filter((item) => item !== 'CRLV'));
+      // !formData.crlv
+      //   ? !missing.includes('CRLV')
+      //     ? setMissing((prev) => [...prev, 'CRLV'])
+      //     : null
+      //   : setMissing((prev) => prev.filter((item) => item !== 'CRLV'));
 
-      !formData.endereco
-        ? !missing.includes('Endereço')
-          ? setMissing((prev) => [...prev, 'Endereço'])
-          : null
-        : setMissing((prev) => prev.filter((item) => item !== 'Endereço'));
+      // !formData.endereco
+      //   ? !missing.includes('Endereço')
+      //     ? setMissing((prev) => [...prev, 'Endereço'])
+      //     : null
+      //   : setMissing((prev) => prev.filter((item) => item !== 'Endereço'));
 
       console.log(missing);
 
@@ -171,15 +171,16 @@ function HomeContent() {
         !formData.telefone ||
         !formData.email ||
         !formData.caminhao ||
-        !formData.carroceria ||
-        !formData.banco ||
-        !formData.agencia ||
-        !formData.conta ||
-        !formData.pix ||
-        !formData.cnh ||
-        !formData.antt ||
-        !formData.crlv ||
-        !formData.endereco
+        !formData.carroceria
+        // ||
+        // !formData.banco ||
+        // !formData.agencia ||
+        // !formData.conta ||
+        // !formData.pix ||
+        // !formData.cnh ||
+        // !formData.antt ||
+        // !formData.crlv ||
+        // !formData.endereco
       ) {
         setState({ vertical: 'bottom', horizontal: 'left', open: true });
 
